@@ -12,10 +12,11 @@ public class corsconfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins(
                         "https://prashanth-5prosovnt-prashanth312.vercel.app",
-                        "http://localhost:3000/"
+                        "http://localhost:3000"
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
     }
 }
+
